@@ -1,55 +1,101 @@
 <!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Dianne Lee</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
 		<link rel = "icon" type = "img/png" href = "dianne.png">
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<style>
+			body{
+				background-color: transparent;
+			}
+			html { 
+				background: url('images/bg.jpg') no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			.marketing .col-lg-4 {
+			  margin-bottom: 20px;
+			  text-align: center;
+			}
+			.marketing {
+			  font-weight: normal;
+			  color: white;
+			}
+			.marketing .col-lg-4 p {
+			  margin-right: 30px;
+			  margin-left: 30px;
+			}
+			.header {
+				text-align: center;
+				margin-bottom: 50px;
+				margin-top: 100px;	
+			}
+			.header h1 {
+				font-size: 60px;
+			}
+			.footer {
+				text-align: right;
+				margin-top: 5px;
+			}
+			.footer a {
+				font-size: 20px;
+			}
+
+		</style>
 	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-
-				<!-- Header -->
-					<header id="header">
-						<h1>Dianne Lee</h1>
-						<p>Student &nbsp;&bull;&nbsp; Journalist &nbsp;&bull;&nbsp; Coder</p>
-						<nav>
-							<ul>
-								<li><a href="https://twitter.com/thedianngle" target = "_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.facebook.com/dianne.lee.75470" target = "_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.linkedin.com/in/diannedayeonlee" target = "_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/leedia" target = "_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:diannedayeonlee@gmail.com" target = "_blank" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">Design: Aerial (<a href="http://html5up.net">HTML5 UP</a>).</span>
-					</footer>
-				
+	<body>
+			<div class="header">
+				<div class = "row">
+					<h1>Dianne Lee</h1>
+					<!--<p>Student &nbsp;&bull;&nbsp; Journalist &nbsp;&bull;&nbsp; Coder</p>-->
+				</div>
 			</div>
-		</div>
+
+				<div class="container marketing">
+					<!-- Three columns of text below the carousel -->
+			      <div class="row">
+			        <div class="col-lg-4">
+			          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+			          <h2>Student</h2>
+			          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+			          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+			        </div><!-- /.col-lg-4 -->
+			        <div class="col-lg-4">
+			          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+			          <h2>Journalist</h2>
+			          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+			          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+			        </div><!-- /.col-lg-4 -->
+			        <div class="col-lg-4">
+			          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+			          <h2>Coder</h2>
+			          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+			        </div><!-- /.col-lg-4 -->
+			      </div><!-- /.row -->
+			  </div>
+
+				<div class = "container footer">
+					<h3> Contact: </h3>
+					<div class = "row">
+						<a href="https://twitter.com/thedianngle" target = "_blank" class="icon fa-twitter"><span class="label">Twitter</span></a>
+						<a href="https://www.facebook.com/dianne.lee.75470" target = "_blank" class="icon fa-facebook"><span class="label">Facebook</span></a>
+						<a href="https://www.linkedin.com/in/diannedayeonlee" target = "_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a>
+						<a href="https://github.com/leedia" target = "_blank" class="icon fa-github"><span class="label">Github</span></a>
+						<a href="mailto:diannedayeonlee@gmail.com" target = "_blank" class="icon fa-envelope-o"><span class="label">Email</span></a>
+					</div>
+				</div>
+
 	</body>
 </html>
