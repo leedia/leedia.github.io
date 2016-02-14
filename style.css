@@ -57,7 +57,7 @@ ul li {
 }
 
 ul li a i {
-	/*background: #205D7A;*/
+	background: transparent;
 	color: #fff;
 	width: 40px;
 	height: 40px;
@@ -66,8 +66,11 @@ ul li a i {
 	text-align: center;
 	margin-right: 10px;
 	padding-top: 15%;
+	border-color:white;
+	border-width:1px;
+	border-style:solid;
 }
-.fa-facebook {
+/*.fa-facebook {
 	background:#3b5998;
 } 
 .fa-linkedin {
@@ -84,7 +87,7 @@ ul li a i {
 }
 .fa-envelope-o {
 	background:#205D7A;
-}
+}*/
 ul li a i {
 	transition: all 0.2s ease-in-out;
 }
