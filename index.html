@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<title>Dianne Lee</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<link rel = "icon" type = "img/png" href = "dianne.png">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
@@ -28,31 +29,104 @@
 		      	    <img class="img-circle" src="images/student.png" alt="Graduation Cap" width="140" height="140"> <!--data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==-->
 		        	<h2>Student</h2>
 		       	    <p>Senior at Needham High School. Leads several school clubs and plays on the varsity soccer team.</p>
-		      	    <p><a class="btn btn-default" data-toggle="collapse" data-target="#student">View details &raquo;</a></p>
+		      	    <p><a class="btn btn-secondary" data-toggle = "collapse" data-target = "#student" href = "#student">View details &raquo;</a></p>
 	     	    </div><!-- /.col-lg-4 -->
 	        
 		        <div class="col-lg-4">
 		  	        <img class="img-circle" src="images/pencil.png" alt="Pencil" width="140" height="140">
 		   	        <h2>Journalist</h2>
 		    	    <p>Editor of <i>The Hilltopper</i>, Needham's student-run news publication. Also writes for <i>Hometown Weekly</i>, a local paper that covers six MA towns.</p>
-		            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+		            <p><a class="btn btn-secondary" data-toggle = "collapse" data-target = "#journalist" href = "#journalist">View details &raquo;</a></p>
 		        </div><!-- /.col-lg-4 -->
 		        
 		        <div class="col-lg-4">
 		            <img class="img-circle" src="images/code.png" alt="Code" width="140" height="140">
 		            <h2>Coder</h2>
 		            <p>Worked on several individual computer science projects and has experience interning for several tech organizations.</p>
-		            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+		            <p><a class="btn btn-secondary" data-toggle = "collapse" data-target = "#coder" href = "#coder">View details &raquo;</a></p>
 		        </div><!-- /.col-lg-4 -->
 
 		    </div><!-- /.row -->
 		</div><!--container descriptions-->
 
-		<div class="container">
-		 	<div id="student" class="collapse">
-			    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-			    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<!--More information-->
+		<div class="container info img-rounded collapse" id = "student">
+		 	<div class = "row">
+		 		<h2>Academics</h2>
+		 		<h4>Education</h4>
+		 		<p>Needham High School | 2013 - 2016 (expected)</p>
+		 		<p>Weighted GPA: 5.0/5.0</p>
+
+		 		<h4>Coursework</h4>
+		 		<p>Math: AP Calculus AB (2013 Score: 5), AP Calculus BC (2014 Score: 5), Linear Algebra (2015 Independent Study), Numerical Analysis (2016 Independent Study), AP Statistics (2016)</p>
+		 		<p>Humanities: AP European History (2013 Score: 5), AP United States History (2014 Score: 5), AP United States Government (2015 Score: 5), AP Language and Composition (2015 Score: 5), AP Literature and Composition (2016)</p>
+		 		<p>Other: Digital Arts, Design and Animation (2014), AP Computer Science (2015 Score: 5), AP Psychology (2016)</p>
+
+		 		<h4>Activities</h4>
+		 		<p>Girls Who Code Club | Founder, Student Ambassador</p>
+				<p>Math Team | Captain</p>
+				<p>School Newspaper | Editor-In-Chief</p>
+				<p>Girls Soccer Team | JV Captain, Varsity Player</p>
+				<p>Robotics Team | Project Manager (Botball), Software Manager (FIRST)</p>
+
+		 		<h4>Selected Achievements</h4>
+			    <p>President&#39s Volunteer Service Award (2016)</p>
+			    <p>National Merit Finalist (2016)</p>
+			    <p>NCWIT National Award Runner-Up & MA State Winner - honors women who are active in computing and tech (2015-2016)</p>
+			    <p>Girls Soccer Division I State Champion Team (2015)</p>
+			    <p>Massachusetts Math Olympiad Finalist (2015)</p>
+			    <p>Massachusetts Association of School Superintendents Certificate of Academic Excellence (2015)</p>
+			    <p>Harvard Book Prize - one of 2 best all-around students in the junior class of 421 (2015)</p>
+			    <p>Needham Exchange Club Youth Community Service Award (2015)</p>
+			    <p>National Honor Society (2014 - 2016)</p>
+			    <p>American Invitational Mathematics Exam Qualifier & American Math Competition School Top Scorer (2013-2015)</p>
+			    <p>Scholastic Art & Writing Awards Regional Gold Key - Persuasive Writing Category (2013)</p>
+			    <a data-toggle = "collapse" data-target = "#student" href = "#">Back to Top</a>
+		    </div>
+		</div>
+
+		<div class = "container info img-rounded collapse" id="journalist">
+			<div class = "row">
+				<h2>Journalism</h2>
+				<h4>Experience</h4>
+				<p>The SnakeByte (Coleman Middle School Student Newspaper) | Founder & Editor-In-Chief</p>
+				<p>tb two* (Tampa Bay Times High School Edition) | Staff Writer & Videojournalist</p>
+				<p>The Fanfare (Berkeley Student Newspaper) | Staff Writer</p>
+				<p>The Hilltopper (Needham Student Newspaper) | Editor-In-Chief</p>
+				<p>Hometown Weekly (Local Newspaper) | Intern, Editorial Staff</p>
+				<h4>Programs</h4>
+				<p>Columbia Scholastic Press Association Summer Journalism Workshop, Editorial Leadership class (2014)</p>
+				<p>Asian American Journalists Association JCamp (2015)</p>
+				<h4>Work Samples</h4>
+				<p><b><a href = "http://jcamplive.aaja.org/green-line/" target = "_blank">One Line, Many Stories</a></b></p>
+				<p>An interactive piece on Twin Cities green line light rail system. Published in the JCamp website</p>
+				<p><b>Needham's Principal Resigns: Editorial & Article</b></p>
+				<p>An editorial about the rumors following former Needham principal's resignation, and an article about the effect this has on students. Published in <i>The Hilltopper</i></p>
+				<p><b>Student Perspective of Needham-Wellesley Rivalry</b></p>
+				<p>A school swap feature on the Needham-Wellesley rivalry, the oldest high school rivalry in North America. Published in <i>The Hilltopper</i> and <i>Hometown Weekly</i>, Needham and Wellesley editions</p>
+				<a data-toggle = "collapse" data-target = "#journalist" href = "#">Back to Top</a>
+			</div>
+		</div>
+
+		<div class = "container info img-rounded collapse" id = "coder">
+		    <div class = "row">
+		    	<h2>Computer Science</h2>
+		    	<h4>Experience</h4>
+		    	<p><b>Intern, Harvard John A. Paulson School of Engineering & Applied Sciences</b></p>
+		    	<p>Visualized data tracking (provenance) in Dataverse, an open source project to analyze research data</p>
+		    	<p><b>Engineering Intern, PatientPing</b></p>
+		    	<p>Designed, coded & presented data validation/fixing project to facilitate PatientPing’s real-time patient data transition</p>
+		    	<p><b>Website Designer, Academy of Management (Social Issues in Management Division)</b></p>
+		    	<p>Redesigned the SIM website according to client specifications</p>
+		    	<h4>Projects</h4>
+		    	<p><b>Github Handle: </b><a href = "https://github.com/leedia">leedia</a></p>
+		    	<p><b>Needham Walk App</b></p>
+		    	<p>Worked with the Needham Historical Society, Girls Who Code, and TripAdvisor to design, code and implement a smartphone app exploring Needham's local community</p>
+		    	<h4>Selected Achievements</h4>
+		    	<p>President&#39s Volunteer Service Award (2016) - received for volunteer work on the Needham Walk App</p>
+		    	<p>NCWIT National Award Runner-Up & MA State Winner - honors women who are active in computing and tech (2015-2016)</p>
+		    	<p>Needham Exchange Club Youth Community Service Award (2015) - received for work on the Needham Girls Who Code club and the Needham Walk App</p>
+			    <a data-toggle = "collapse" data-target = "#coder" href = "#">Back to Top</a>
 		    </div>
 		</div>
 
@@ -64,7 +138,7 @@
 					<li><a href="https://twitter.com/thedianngle" target = "_blank"><i class="fa fa-twitter"></i></a></li>
 					<li><a href="https://github.com/leedia" target = "_blank"><i class="fa fa-github"></i></a></li>
 					<li><a href="https://www.linkedin.com/in/diannedayeonlee" target = "_blank"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="mailto:diannedayeonlee [at] gmail [dot] com" target = "_blank"><i class="fa fa-envelope-o"></i> </a></li>
+					<li><a href="mailto:yourmissingsemicolon [at] gmail [dot] com" target = "_blank"><i class="fa fa-envelope-o"></i> </a></li>
 				</ul>
 			</div>
 			
