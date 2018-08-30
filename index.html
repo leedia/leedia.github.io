@@ -3,153 +3,270 @@
 <html>
 	<head>
 		<title>Dianne Lee</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<link rel = "icon" type = "img/png" href = "dianne.png">
+		<link rel = "icon" type = "img/png" href = "static/images/favicon.png">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Mouse+Memoirs">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="static/css/style.css">    
 
 	</head>
 
 	<body>
-		<div class="header">
-			<div class = "row">
-				<h1>Dianne Lee</h1>
-				<!--<p>Student &nbsp;&bull;&nbsp; Journalist &nbsp;&bull;&nbsp; Coder</p>-->
-			</div>
-		</div>
 
-		<div class="container descriptions">
-			<!-- Three columns of text below the carousel -->
-	        <div class="row">
-	            <div class="col-lg-4">
-		      	    <img class="img-circle" src="images/student.png" alt="Graduation Cap" width="140" height="140"> <!--data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==-->
-		        	<h2>Student</h2>
-		       	    <p>Sophomore at Harvard University. A.B. Candidate in Computer Science.</p>
-		      	    <p><a class="btn btn-secondary" data-toggle = "collapse" data-target = "#student" href = "#student">View details &raquo;</a></p>
-	     	    </div><!-- /.col-lg-4 -->
-	        
-		        <div class="col-lg-4">
-		  	        <img class="img-circle" src="images/pencil.png" alt="Pencil" width="140" height="140">
-		   	        <h2>Journalist</h2>
-		    	    <p>Beat Reporter & Data Team for <i>The Harvard Crimson</i>.</p>
-		            <p><a class="btn btn-secondary" data-toggle = "collapse" data-target = "#journalist" href = "#journalist">View details &raquo;</a></p>
-		        </div><!-- /.col-lg-4 -->
-		        
-		        <div class="col-lg-4">
-		            <img class="img-circle" src="images/code.png" alt="Code" width="140" height="140">
-		            <h2>Coder</h2>
-		            <p>Technical internship experience, individual software projects.</p>
-		            <p><a class="btn btn-secondary" data-toggle = "collapse" data-target = "#coder" href = "#coder">View details &raquo;</a></p>
-		        </div><!-- /.col-lg-4 -->
+        <!-- navigation panel -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Menu</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+              <ul class="nav navbar-nav navbar-right nav-pills">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#student">Student</a></li>
+                <li><a href="#coder">Coder</a></li>
+                <li><a href="#writer">Writer</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+		
+        <!-- first section - Home -->
+        <div id="home" class="home">
+            <div class="header">
+                <div class = "row">
+                    <h1>Dianne Lee</h1>
+            </div>
 
-		    </div><!-- /.row -->
-		</div><!--container descriptions-->
+            <div class="container descriptions" style = "padding-top: 20px">
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="img-circle" src="static/images/student.png" alt="Graduation Cap" width="140" height="140"> <!--data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==-->
+                        <h2>Student</h2>
+                        <p>A.B. Candidate in Computer Science at Harvard University.</p>
+                        <p><a href = "#student">Details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    
+                    <div class="col-lg-4">
+                        <img class="img-circle" src="static/images/code.png" alt="Code" width="140" height="140">
+                        <h2>Coder</h2>
+                        <p>Technical internship experience + individual software projects.</p>
+                        <p><a href = "#coder">Details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
 
-		<!--More information-->
-		<div class="container info img-rounded collapse" id = "student">
-		 	<div class = "row">
-		 		<h2>Academics</h2>
-		 		<h4>Education</h4>
-		 		<p>Harvard University | 2016 - 2020 (expected)</p>
-		 		<p>Needham High School | 2013 - 2016</p>
-		 		<p>   Weighted GPA: 5.0/5.0</p>
+                    <div class="col-lg-4">
+                        <img class="img-circle" src="static/images/pencil.png" alt="Pencil" width="140" height="140">
+                        <h2>Writer</h2>
+                        <p>Data Team Lead for <i>The Harvard Crimson</i> + Creative Writer.</p>
+                        <p><a href = "#writer">Details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
 
-		 		<h4>Coursework</h4>
-		 		<p>Math: AP Calculus AB (2013 Score: 5), AP Calculus BC (2014 Score: 5), Linear Algebra (2015 Independent Study), Numerical Analysis (2016 Independent Study), AP Statistics (2016)</p>
-		 		<p>Humanities: AP European History (2013 Score: 5), AP United States History (2014 Score: 5), AP United States Government (2015 Score: 5), AP Language and Composition (2015 Score: 5), AP Literature and Composition (2016)</p>
-		 		<p>Other: Digital Arts, Design and Animation (2014), AP Computer Science (2015 Score: 5), AP Psychology (2016)</p>
+                    <div class = "row contact-first">
+                        <h3 style = "text-align:right; padding-right:15px;"> Contact: </h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/dianne.lee.75470" target = "_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/diannelee_" target = "_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://github.com/leedia" target = "_blank"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/diannedayeonlee" target = "_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="mailto:diannelee [at] college [dot] harvard [dot] edu" target = "_blank"><i class="fa fa-envelope-o"></i> </a></li>
+                            <li><a href="static/files/DianneLee_Resume.pdf" target = "_blank"><i class="fa fa-file-o"></i> </a></li>
 
-		 		<h4>Activities</h4>
-		 		<p>Girls Who Code Club | Founder, Student Ambassador</p>
-				<p>Math Team | Captain</p>
-				<p>School Newspaper | Editor-In-Chief</p>
-				<p>Girls Soccer Team | JV Captain, Varsity Player</p>
-				<p>Robotics Team | Project Manager (Botball), Software Manager (FIRST)</p>
+                        </ul>
+                        <a href="#about">
+                            <span class = "glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </div>
+                </div><!-- /.row -->
+            </div><!--container descriptions-->
+        </div>
+        <!-- /first section -->
 
-		 		<h4>Selected Achievements</h4>
-		 		<p>Needham High School Award for Academic Excellence - presented to a senior at graduation (2016)</p>
-		 		<p>John W. Ferrett Memorial English Prize - presented to a senior who has achieved the greatest proficiency in English and who has contributed to the Needham High School publications (2016)</p>
-		 		<p>Sigma Award - presented to the highest achieving senior in mathematics (2016)</p>
-		 		<p>Needham High School Class Day Speaker (2016)</p>
-		 		<p>U.S. Presidential Scholar (2016)</p>
-			    <p>President&#39s Volunteer Service Award (2016)</p>
-			    <p>National Merit Finalist (2016)</p>
-			    <p>NCWIT National Award Runner-Up & MA State Winner - honors women who are active in computing and tech (2015-2016)</p>
-			    <p>Girls Soccer Division I State Champion Team (2015)</p>
-			    <p>Massachusetts Math Olympiad Finalist (2015)</p>
-			    <p>Massachusetts Association of School Superintendents Certificate of Academic Excellence (2015)</p>
-			    <p>Harvard Book Prize - one of 2 best all-around students in the junior class of 421 (2015)</p>
-			    <p>Needham Exchange Club Youth Community Service Award (2015)</p>
-			    <p>National Honor Society (2014 - 2016)</p>
-			    <p>American Invitational Mathematics Exam Qualifier & American Math Competition School Top Scorer (2013-2015)</p>
-			    <p>Scholastic Art & Writing Awards Regional Gold Key - Persuasive Writing Category (2013)</p>
-			    <a data-toggle = "collapse" data-target = "#student" href = "#">Back to Top</a>
-		    </div>
-		</div>
+        <!-- second section - About -->
+        <div id="about" class="pad-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6" style="text-align:center;">
+                <img class="img-circle" src="static/images/dianne.jpg" alt="Dianne" width="300" />
+              </div>
+              <div class="col-sm-6 text-left">
+                <h2>About Me</h2>
+                <p>Hi, I'm Dianne! I'm the girl with an owl on her head. I'm also a junior at Harvard concentrating in Computer Science on the <a href = "https://mbb.harvard.edu/pages/tracks">Mind, Brain, and Behavior track</a>. I'm particularly interested in the intersection between CS and other fields, especially psychology, neurobiology, literature, journalism, and human behavior.</p>
+                <p>Because of this, I've studied and worked on many projects in data science, visualization, and computational science & engineering. I've worked a lot with <a href = "https://www.thecrimson.com/article/2017/11/6/concentration-data-analysis/">interactive</a> <a href = "https://www.thecrimson.com/article/2018/3/10/0-hupd-crime-data-dump/">journalism</a> and enjoy applying what I learn about coding and statistics to other subjects I enjoy, like <a href = "">Ancient</a> <a href = "">Egypt.</a></p>
+                <p>In my free time, you can find me working on <a href = "https://github.com/leedia">a personal project</a>, playing soccer, or banging away at the piano.</p>
+                <p>Still curious? Check out my <a href = "static/files/DianneLee_Resume.pdf" target = "_blank">resume.</a></p>
+              </div>
+            </div>
+          </div>
+          <a href="#student">
+                <span class = "glyphicon glyphicon-chevron-down"></span>
+            </a>
+        </div>
+        <!-- /second section -->
 
-		<div class = "container info img-rounded collapse" id="journalist">
-			<div class = "row">
-				<h2>Journalism</h2>
-				<h4>Experience</h4>
-				<p>The SnakeByte (Coleman Middle School Student Newspaper) | Founder & Editor-In-Chief</p>
-				<p>tb two* (Tampa Bay Times High School Edition) | Staff Writer & Videojournalist</p>
-				<p>The Fanfare (Berkeley Student Newspaper) | Staff Writer</p>
-				<p>The Hilltopper (Needham Student Newspaper) | Editor-In-Chief</p>
-				<p>Hometown Weekly (Local Newspaper) | Intern, Editorial Staff</p>
-				<h4>Programs</h4>
-				<p>Columbia Scholastic Press Association Summer Journalism Workshop, Editorial Leadership class (2014)</p>
-				<p>Asian American Journalists Association JCamp (2015)</p>
-				<h4>Work Samples</h4>
-				<p><b><a href = "http://jcamplive.aaja.org/green-line/" target = "_blank">One Line, Many Stories</a></b></p>
-				<p>An interactive piece on Twin Cities green line light rail system. Published in the JCamp website</p>
-				<p><b>Needham's Principal Resigns: Editorial & Article</b></p>
-				<p>An editorial about the rumors following former Needham principal's resignation, and an article about the effect this has on students. Published in <i>The Hilltopper</i></p>
-				<p><b>Student Perspective of Needham-Wellesley Rivalry</b></p>
-				<p>A school swap feature on the Needham-Wellesley rivalry, the oldest high school rivalry in North America. Published in <i>The Hilltopper</i> and <i>Hometown Weekly</i>, Needham and Wellesley editions</p>
-				<a data-toggle = "collapse" data-target = "#journalist" href = "#">Back to Top</a>
-			</div>
-		</div>
+        <!-- Student -->
+        <div id="student" class="container info centered pad-section">
+            <div class = "row">
+                <h2>Academics</h2>
+                <h4>Education</h4>
+                <div class = "col-sm-6">
+                    <p>Harvard University<br><small>2016 - 2020 (expected)</small><br><small>A.B. Candidate in Computer Science<br>Dunster House</small></p>
+                </div>
+                <div class = "col-sm-6">
+                    <p>Needham High School<br><small>2013 - 2016</small></p>
+                </div><br>
+                <div class = "col-sm-12">
+                    <h4>Highlighted Coursework</h4>   
+                </div> 
+                <div class = "col-sm-6">
+                    <p>STEM:<br><small>CS182: Artificial Intelligence<br>CS124: Data Structures & Algorithms<br>AM120: Applied Linear Algebra & Big Data<br>STAT110: Probability<br>MATH21A: Multivariate Calculus<br>CS61: Systems Programming</small></p>
+                </div>
+                <div class = "col-sm-6">
+                    <p>Other:<br><small>Cvb (002): Fiction Writing<br>ES26: Systems Thinking<br>ECON1050: Game Theory<br>Digital Arts, Design and Animation</small></p>
+                </div>
+                <div class = "col-sm-12">
+                    <h4>Activities</h4>
+                    <p>The Harvard Crimson<br><small>As <b>Digital Strategist</b> and <b>Data Team Lead,</b> I analyze The Crimson's internal data and propose solutions to move the paper into a digital future. I also manage the data team and write stories based on University datasets.</small></p>
+                    <p>Harvard Computer Society<br><small>As <b>Director of External Relations,</b> I work with corporate sponsors to set up technical events for students on campus.</small></p>
+                    <p>The Noteables<br><small>A Broadway show choir, the Noteables puts on a performance every semester of various songs and choreography from musicals like Les Miserables and Hairspray.</small></p>
 
-		<div class = "container info img-rounded collapse" id = "coder">
-		    <div class = "row">
-		    	<h2>Computer Science</h2>
-		    	<h4>Experience</h4>
-		    	<p><b>Intern, Harvard John A. Paulson School of Engineering & Applied Sciences</b></p>
-		    	<p>Visualized data tracking (provenance) in Dataverse, an open source project to analyze research data</p>
-		    	<p><b>Engineering Intern, PatientPing</b></p>
-		    	<p>Designed, coded & presented data validation/fixing project to facilitate PatientPing’s real-time patient data transition</p>
-		    	<p><b>Website Designer, Academy of Management (Social Issues in Management Division)</b></p>
-		    	<p>Redesigned the SIM website according to client specifications</p>
-		    	<h4>Projects</h4>
-		    	<p><b>Github Handle: </b><a href = "https://github.com/leedia">leedia</a></p>
-		    	<p><b>Needham Walk App</b></p>
-		    	<p>Worked with the Needham Historical Society, Girls Who Code, and TripAdvisor to design, code and implement a smartphone app exploring Needham's local community</p>
-		    	<h4>Selected Achievements</h4>
-		    	<p>President&#39s Volunteer Service Award (2016) - received for volunteer work on the Needham Walk App</p>
-		    	<p>NCWIT National Award Runner-Up & MA State Winner - honors women who are active in computing and tech (2015-2016)</p>
-		    	<p>Needham Exchange Club Youth Community Service Award (2015) - received for work on the Needham Girls Who Code club and the Needham Walk App</p>
-			    <a data-toggle = "collapse" data-target = "#coder" href = "#">Back to Top</a>
-		    </div>
-		</div>
+                    <h4>Selected Achievements</h4>
+                    <p>U.S. Presidential Scholar <small>2016<br>The The White House Commission on Presidential Scholars, appointed by President Obama, selects honored scholars annually based on their academic success, artistic excellence, essays, school evaluations and transcripts, as well as evidence of community service, leadership, and demonstrated commitment to high ideals.</small></p>
+                    <p>Needham High School Award for Academic Excellence <small>2016<br>Presented to one high-achieving senior at graduation.</small></p>
+                    <p>President&#39s Volunteer Service Award <small>2016<br>The President’s Volunteer Service Award recognizes United States citizens and lawfully admitted, permanent residents of the United States who have achieved the required number of hours of service over a 12-month time period or cumulative hours over the course of a lifetime.</small></p>
+                    <p>NCWIT National Award Runner-Up & MA State Winner <small>2016<br>Honors women who are active in computing and tech</small></p>
+                    <p>Girls Soccer Division I State Champion Team <small>2015<br></small></p>
+                    <p>MA Association of School Superintendents Certificate of Academic Excellence <small>2015<br>Selected by the Superintendent among the top 5% of the graduating class</small></p>
+                    <p>Needham Exchange Club Youth Community Service Award <small>2015<br>Received for work with Girls Who Code and the Needham Walk App.</small></p>
+                </div>
+            </div>
+            <a href="#coder">
+                <span class = "glyphicon glyphicon-chevron-down"></span>
+            </a>
+        </div>
+        <!-- /student -->
+
+        <!-- Coder -->
+        <div id="coder" class="pad-section">
+            <div class="container">
+                <div class = "row" style = "margin: auto;">
+                    <h2 style="text-align:center;">Coding</h2>
+                    <p>I currently study <b>Computer Science</b> at Harvard on the <b>Mind, Brain, and Behavior</b> track. My specific interests include data science, computational science & engineering, software engineering, web design, and the <b>intersection between CS and other fields of study.</b></p>
+                    <p>My technical experience mainly stems from <b>internships</b> and <b>personal projects.</b> I currently work as a <b>Software Developer</b> for the <b>Harvard Arts and Humanities Research Computing Department</b> and on the <b>Data Analysis Team</b> for the Beto O'Rourke Senatorial Campaign. I also work with internal and external data analytics as <b>Digital Strategist</b> and <b>Data Team Lead</b> for The Harvard Crimson.</p>
+                    <p>In the past, I've worked on a diverse array of projects. I spent a summer as a <b>Software Intern</b> at <b><a href = "https://www.ibj.co.jp/">Internet Business Japan</a></b> in Tokyo, a <b>Game Development Intern</b> for <b><a href = "https://www.valvesoftware.com/en/">Valve Software,</a></b> and an <b>Engineering Intern</b> for <b><a href = "http://www.patientping.com/">PatientPing</a></b>. I've also worked within my university, as a <b>Research Assistant</b> for the <b>Cox Lab</b> and <b>Intern</b> for the <b><a href = "https://dataverse.org/">Harvard Dataverse Project.</a></b></p>
+                    <p>Check out my <b><a href = "static/files/DianneLee_Resume.pdf" target = "_blank">resume</a></b> for more information.</p>
+                </div>
+                <div class = "row" style = "margin: auto; text-align: center; padding-bottom:20px;">
+                    <h4>Highlighted Projects</h4>
+                </div>
+            </div>
+
+            <div class="container project-showcase">
+                <div class = "row" style = "margin: auto; text-align: center;">
+                    <div class = "col-sm-4">
+                        <img class="img-circle" src="static/images/tbd.jpg" alt="TBD"/>
+                        <p>Forthcoming><br><small></small></p>
+                    </div>
+                    <div class = "col-sm-4">
+                        <img class="img-circle" src="static/images/concentrations.png" alt="Website Screenshot"/>
+                        <p>Concentration Data Vis<br><small>Created an interactive visualization of Harvard's 50+ concentrations over the past 9 years for The Crimson using HTML/CSS/JS and the Highcharts library.<br><a href="https://leedia.github.io/concentration-data">Demo >></a><br><a href="https://github.com/leedia/concentration-data">Source Code >></a></small></p>
+                    </div>
+                    <div class = "col-sm-4">
+                        <img class="img-circle" src="static/images/culture-travel.png" alt="App Screenshot"/>
+                        <p>Culture Travel App<br><small>Initiated, designed, and coded app mapping sites linked with history of different cultures. Currently in beta testing for the Harvard area.<br><a href="https://leedia.github.io/culturetravelweb/">Demo >></a></small></p>
+                    </div>
+                </div>
+                <div class = "row" style = "margin: auto; text-align: center;">
+                    <div class = "col-sm-4">
+                        <img class="img-circle" src="static/images/needham-walk.png" alt="App Screenshot"/>
+                        <p>Needham Walk App<br><small>Led a team to design, code, and implement an app (web, Android, iOS) exploring the local history of Needham. Project launch 4/11/2015, first historical walk on 10/4/2015. Sponsored by the Needham Historical Society, Girls Who Code, TripAdvisor.<br><a href="https://leedia.github.io/needham-walk/">Mobile Web Version >></a><br><a href="https://github.com/leedia/needham-walk">Source Code >></a><br><a href="http://needham.wickedlocal.com/article/20150416/NEWS/150417594">Press </a><a href="https://patch.com/massachusetts/needham/needham-history-walk-has-new-app-0">Releases </a><a href="http://neatoday.org/2015/06/01/coding-in-the-classroom/">>></a></small></p>
+                    </div>
+                    <div class = "col-sm-4">
+                        <img class="img-circle" src="static/images/personal-website.png" alt="Website Screenshot"/>
+                        <p>Personal Website<br><small>That's right, this very website you are currently scrolling through. While a work in progress, my personal website showcases some of my web design skills and knowledge of HTML/CSS & Bootstrap.<br><a href="https://github.com/leedia/leedia.github.io">Source Code >></a></small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class = "row" style = "margin:auto;">
+                    <p style = "text-align: center;">Find more on my <a href = "https://github.com/leedia">Github.</a></p>
+                </div>
+                <div class = "row" style = "margin: auto; text-align:center;">
+                    <h4>Selected Achievements</h4>
+                    <p>President&#39s Volunteer Service Award<br><small>2016<br>Received for volunteer work on the Needham Walk App.</small></p>
+                    <p>NCWIT National Award Runner-Up & MA State Winner<br><small>2015,2016<br>Honors women who are active in computing and tech</small></p>
+                    <p>Needham Exchange Club Youth Community Service Award<br><small>2015<br>Received for work on the Needham Girls Who Code club and the Needham Walk App</small></p>
+                </div>
+            </div>
+            <a href="#writer">
+                <span class = "glyphicon glyphicon-chevron-down"></span>
+            </a>
+        </div>
+        <!-- /coder -->
+
+        <!-- Writer -->
+        <div id="writer" class="container info centered pad-section">
+            <div class = "row">
+                <h2>Writing</h2>
+                <p>I currently write for the <b>News Board</b> of The Harvard Crimson, where I also serve as <b>Digital Strategist</b> and <b>Data Team Lead.</b> Check out my articles and interactives <b><a href = "https://www.thecrimson.com/writer/1213252/Dianne__Lee/">here.</a></b></p>
+                <p>Previously, I started my middle school newspaper, <b>The Coleman SnakeByte</b> and worked on <b>tb two*,</b> the Tampa Bay Times' high school edition. I also served as editor-in-chief of my high school paper <b>The Needham Hilltopper</b> and interned at <b>Hometown Weekly,</b> a local paper covering six MA towns. I honed my journalism skills through programs like <b>AAJA's JCamp</b> and the <b>CSPA Summer Journalism Workshop.</b> See my <b><a href = "static/files/DianneLee_Resume.pdf" target = "_blank">resume</a></b> for more information.</p>
+                <p>I also write creatively, mainly <b>science fiction</b> and <b>magical realism</b>. Check out some of my work <b><a href = "https://stringstr.wordpress.com/">here</a></b> and <b><a href = "https://www.reddit.com/user/stringstr">here.</a></b></p>
+
+                <h4>Selected Clips</h4>
+                <p><b><a href = "https://www.thecrimson.com/article/2018/3/10/0-hupd-crime-data-dump/" target = "_blank">Crimes Clustered Around Square, River, Per Harvard Police Data</a></b></p>
+                <p>A look into a year's worth of HUPD reports to identify trends in crime on Harvard's campus. I led data analysis and coded an <a href = "https://www.thecrimson.com/widget/2018/3/10/hupd-heatmap/">interactive</a> for this article.</p>
+                <p><b><a href = "https://www.thecrimson.com/article/2017/11/6/concentration-data-analysis/" target = "_blank">How Student Concentrations Are Changing at Harvard</a></b></p>
+                <p>A look into how student concentrations changed at Harvard over the past nine years. I wrote and coded an <a href = "https://leedia.github.io/concentration-data">interactive</a> for this article.</p>
+                <p><b><a href = "https://www.thecrimson.com/article/2017/5/22/rudenstine-first-year-1992/" target = "_blank">A Mild-Mannered Man: President Rudenstine’s First Year</a></b></p>
+                <p>An in-depth feature I extensively researched and wrote on the 1992 term of Neil L. Rudenstine, 26th President of Harvard University. Published in <i>The Crimson's</i> commencement issue.</p>
+                <p><b><a href = "http://jcamplive.aaja.org/green-line/" target = "_blank">One Line, Many Stories</a></b></p>
+                <p>An interactive piece I filmed, wrote, and coded on Twin Cities green line light rail system. Published on the JCamp website.</p>
+
+                <h4>Honors</h4>
+                <p>2017 Society of Professional Journalists Mark of Excellence Award<br><small>Online Feature Reporting Region 1 Finalist for "How Student Concentrations Are Changing at Harvard"</small></p>
+            </div>
+            <a href="#contact">
+                <span class = "glyphicon glyphicon-chevron-down"></span>
+            </a>
+          </div>
+        </div>
+        <!-- /writer -->
+
+        <!-- Contact -->
+        <div id="contact" class="contact-footer centered pad-section">
+            <div class = "container">
+                <h2> Contact Me: </h2>
+                <div class ="row" style = "padding-top: 10px; padding-bottom: 20px;">Feel free to reach out on any of the following:</div>
+                <div class = "row">
+                    <ul >
+                        <li><a href="https://www.facebook.com/dianne.lee.75470" target = "_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/thedianngle" target = "_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/leedia" target = "_blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/diannedayeonlee" target = "_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="mailto:diannelee [at] college [dot] harvard [dot] edu" target = "_blank"><i class="fa fa-envelope-o"></i> </a></li>
+                        <li><a href="static/files/DianneLee_Resume.pdf" target = "_blank"><i class="fa fa-file-o"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /contact -->
 
 		<div class = "container footer">
-			<h3> Contact: </h3>
-			<div class = "row">
-				<ul>
-					<li><a href="https://www.facebook.com/dianne.lee.75470" target = "_blank"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="https://twitter.com/thedianngle" target = "_blank"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="https://github.com/leedia" target = "_blank"><i class="fa fa-github"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/diannedayeonlee" target = "_blank"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="mailto:diannelee [at] college [dot] harvard [dot] edu" target = "_blank"><i class="fa fa-envelope-o"></i> </a></li>
-				</ul>
-			</div>
-			
+			Designed by Dianne Lee © 2018
 		</div><!--container footer-->
 
+        <!--scripts-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>   
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

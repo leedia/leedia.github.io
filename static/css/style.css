@@ -1,0 +1,246 @@
+.container {
+	width: 70%;
+}
+.project-showcase {
+	width: 50%;
+}
+
+.navbar {
+  background: white;
+  opacity: 0.6;
+}
+
+.navbar a {
+	color: black !important;
+}
+
+.navbar-brand {
+	font-size: 20px;
+}
+
+.navbar-right a{
+	font-size: 18px;
+}
+
+.descriptions .col-lg-4 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.descriptions {
+    font-weight: normal;
+    color: white;
+}
+.descriptions .col-lg-4 p {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.descriptions .col-lg-4 img {
+	background: honeydew; 
+}
+.descriptions h2 {
+	font-size: 35px;
+	font-family: 'Mouse Memoirs', helvetica;
+}
+.descriptions p {
+	font-size: 18px;
+}
+.descriptions p a {
+	font-size: 18px
+}
+.header {
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 65px;	
+}
+.header h1 {
+	font-size: 90px;
+	font-family: 'Mouse Memoirs', helvetica;
+}
+.footer {
+	text-align: right;
+	margin-top: -10px;
+}
+.footer a {
+	font-size: 20px;
+}
+ul {
+	overflow: auto;
+}
+
+.contact-first ul li {
+	list-style-type: none;
+	float: right;
+}
+
+.contact-footer ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.contact-first ul li a i {
+	background: transparent;
+}
+
+ul li a i {
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 25px;
+	margin-right: 10px;
+	padding-top: 25%;
+	border-color:white;
+	border-width:1px;
+	border-style:solid;
+}
+.contact-footer ul li a i {
+	padding-top: 20%;
+}
+.fa-facebook {
+	background:#3b5998;
+} 
+.fa-linkedin {
+	background:#007bb6;
+}
+.fa-twitter {
+	background:#00aced;
+}
+.fa-google-plus {
+	background:#dd4b39;
+}
+.fa-github {
+	background:#262626;
+}
+.fa-envelope-o {
+	background:#205D7A;
+}
+.contact-footer .fa-file-o {
+	background:#ffffff;
+	color: #000;
+	border-color: #000;
+}
+ul li a i {
+	transition: all 0.2s ease-in-out;
+}
+ul li a i:hover {
+	opacity: .7;
+}
+
+#home .glyphicon, #student .glyphicon, #writer .glyphicon {
+	color: white !important;
+}
+
+#about .glyphicon, #coder .glyphicon {
+	color: #555 !important;
+	display: block;
+	text-align: center;
+}
+
+.centered {
+	text-align: center;
+}
+
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+/*.pad-section img {
+  width: 100%;
+}*/
+
+/* additional sections */
+#home {
+  background: url(../images/home-bg.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#about {
+	background-color: honeydew;
+}
+#student {
+  background: url(../images/student-bg.jpg) no-repeat center center fixed;
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#coder {
+  background-color: honeydew;
+}
+
+#writer {
+  background: url(../images/writer-bg.jpg) no-repeat center center fixed;
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#contact {
+	background-color: honeydew;
+	font-size: 20px;
+}
+#contact h2 {
+	font-size: 40px;
+	font-family: 'Mouse Memoirs', helvetica;
+}
+
+.info .row{
+	-moz-border-radius:10px;  /* for Firefox */
+	-webkit-border-radius:10px; /* for Webkit-Browsers */
+	border-radius:20px; /* regular */
+	background-color: rgba(255,255,255,0.8);
+	width:70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 5% 10% 5% 10%;
+}
+
+.pad-section h2 { 
+	font-size: 40px;
+	font-family: 'Mouse Memoirs', helvetica;
+ }
+
+ .pad-section p {
+ 	font-size: 18px;
+ }
+
+ .pad-section h4 {
+ 	font-weight: bold;
+ 	padding-top: 10px;
+ }
+
+ #coder .col-sm-6 {
+ 	margin:auto; 
+ 	text-align: center;
+ }
+
+ #coder .col-sm-4 img {
+ 	width: 125px;
+ }
+ #coder .col-sm-4 p {
+ 	padding-top: 20px;
+ 	padding-bottom: 20px;
+ }
